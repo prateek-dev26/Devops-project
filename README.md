@@ -1,40 +1,74 @@
 # 🚀 DevOps Project
 
 ## 📌 Project Overview
-This project demonstrates a scalable and containerized application deployment using Docker and Kubernetes.
+
+This project demonstrates a complete DevOps workflow by containerizing an application using Docker and deploying it on Kubernetes. It showcases how applications can be efficiently managed and scaled in a containerized environment.
 
 ---
 
 ## 🛠️ Tech Stack
-- Docker
-- Kubernetes
-- Git & GitHub
+
+* Docker
+* Kubernetes
+* Git & GitHub
+
+---
+
+## 📂 Project Structure
+
+```
+Devops-project/
+│── Dockerfile
+│── deployment.yaml
+│── service.yaml
+│── README.md
+```
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### Clone the Repository
-git clone https://github.com/your-username/your-repo.git
+### 1️⃣ Clone the Repository
 
-### Build Docker Image
-docker build -t my-app .
+git clone https://github.com/prateek-dev26/Devops-project.git
 
-### Run Container
-docker run -p 8080:8080 my-app
+### 2️⃣ Navigate to Project Directory
 
-### Deploy to Kubernetes
+cd Devops-project
+
+### 3️⃣ Build Docker Image
+
+docker build -t devops-app .
+
+### 4️⃣ Run Container
+
+docker run -p 8080:8080 devops-app
+
+### 5️⃣ Deploy to Kubernetes
+
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 
 ---
 
 ## 📊 Features
-- Containerized application
-- Scalable deployment
-- Easy to manage
+
+* Containerized application using Docker
+* Kubernetes-based deployment
+* Scalable and efficient architecture
+* Easy deployment and management
+
+---
+
+## 📌 Future Enhancements
+
+* CI/CD pipeline integration
+* Monitoring using Prometheus and Grafana
+* Cloud deployment (AWS / Azure)
 
 ---
 
 ## 🙌 Author
+
 Prateek Vishwakarma
+Aspiring DevOps Engineer 🚀
